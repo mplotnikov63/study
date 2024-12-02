@@ -8,7 +8,7 @@ body {
 .box1 {
 
 }
-.container2 {
+.main3{
 
     width: 1220px;
     margin: 0 auto;
@@ -34,7 +34,10 @@ body {
 
 .services5 {
     display: flex;
-    
+    justify-content: space-between;
+    width: 1052px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 #logo5 {
@@ -64,17 +67,71 @@ body {
     align-items: center;
 }
 
+.service6 p {
+    max-width: 160px;
+    text-align: center;
+}
+.service6 img {
+    max-height: 137px;
+}
 h2 {
     font-size: 90px;
     font-family: 'Montserrat';
     font-weight: bold;
     text-transform: uppercase;
+    color: #130e27;
+    line-height: 90px;
+    margin: 0;
+}
+
+#h21 {
+    margin-top: 138px;
+}
+#h22 {
+    color: white;
+}
+
+.title5 p {
+    color: white;
+    font-size: 16px;
+    max-width: 360px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 30px;
+}
+.title_2 {
+    display: flex;
+    margin: 44px 0 0 94px;
+}
+.title_2 p {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #130e27;
+    line-height: 40px;
+    margin: 0;
+}
+
+.title_2 p:first-child {
+    color: #c92d19;
+    margin-right: 18px;
 }
 
 .center4 {
     display: flex;
+    justify-content: space-between;
+    background-color: #130e27;
+    padding: 0 84px;
+    padding-left: 100px;
 }
 
+.center4 p {
+    max-width: 500px;
+    color: white;
+    line-height: 22px;
+    margin: auto 0;
+}
 .pricing4 {
     display: flex;
     flex-direction: column;
@@ -91,4 +148,23 @@ h2 {
 
 .top_buttons5 {
     display: flex;
+}
+.button5 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    margin: auto 0;
+    padding: 20px 60px;
+    margin-right: 6px;
+    background-color: #c92d19;
+    transition: transform 0.4s;
+    margin: 30px 0;
+}
+.button5:hover {
+    transform: scale(1.05)
 }
