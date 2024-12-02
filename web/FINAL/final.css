@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.box1 {
+
+}
+.container2 {
+
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_buttons5 {
+    
+}
+.top4 {
+    padding: 0 84px;
+    padding-top: 38px;
+    height: 650px;
+    background-color: #dd2211;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../FINAL/background.png);
+}
+.our_services4 {
+
+}
+
+.services5 {
+    display: flex;
+    
+}
+
+#logo5 {
+    margin-right: 204px;
+}
+.button6 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    margin: auto 0;
+    padding: 10px 14px;
+    margin-right: 6px;
+    transition: background-color 0.4s;
+}
+
+.button6:hover {
+    background-color: #130e27;
+}
+.service6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 90px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.center4 {
+    display: flex;
+}
+
+.pricing4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing_blocks6 {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing_block6 {
+    margin: 0 auto;
+}
+
+.top_buttons5 {
+    display: flex;
+}
