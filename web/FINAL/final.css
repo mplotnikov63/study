@@ -5,9 +5,7 @@
 body {
     margin: 0;
 }
-.box1 {
 
-}
 .main3{
 
     width: 1220px;
@@ -16,9 +14,6 @@ body {
     flex-direction: column;
 }
 
-.top_buttons5 {
-    
-}
 .top4 {
     padding: 0 84px;
     padding-top: 38px;
@@ -27,9 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(../FINAL/background.png);
-}
-.our_services4 {
-
 }
 
 .services5 {
@@ -127,6 +119,7 @@ h2 {
 }
 
 .pricing4 {
+    background-color: #efefef;
     width: 1220px;
 }
 .center4 p {
@@ -137,6 +130,11 @@ h2 {
 }
 .pricing4 h3 {
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #130e27;
+    font-size: 40px;
 }
 
 .pricing_block6 {
@@ -146,19 +144,49 @@ h2 {
     justify-content: center;
     height: 400px;
     width: 320px;
-    background-color: #852525;
+    background-color: #ffffff;
     border-radius: 5px;
+    margin-bottom: 70px;
+    align-items: center;
+}
+.pricing_block_button {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    background-color: #130e27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.4s;
 }
 
+.pricing_block_button:hover {
+    background-color: #c92d19;
+}
+
+.pricing_block6 h4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c92d19;
+    font-family: 'Montserrat';
+}
 .pricing_blocks5 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-h4 {
-    font-size: 40px;
+.pricing_block6 p {
+    font-size: 20px;
+    max-width: 170px;
+    margin: 0;
 }
-
 .top_buttons5 {
     display: flex;
 }
@@ -180,4 +208,22 @@ h4 {
 }
 .button5:hover {
     transform: scale(1.05)
+}
+.bottom4 {
+    background-color: #130e27;
+    height: 190px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.bottom4 img {
+    object-fit: contain;
+    margin-right: 84px;
+}
+
+.bottom4 p {
+    margin-left: 84px;
 }
