@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+}
+
+[mytitle] {
+    cursor: pointer;
+    /* меняет курсор при наведении */
+}
+ [mytitle]:after {
+    content: '';
+    transition: 0.2s;
+ }
+ [mytitle]:hover:after {
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color: #d09393;
+    padding: 10px;
+    z-index: 100;
+ }
+ 
