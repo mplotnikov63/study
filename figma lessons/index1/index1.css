@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Open Sans"),
+         /* Если не получилось, загрузит ttf */
+         url("Open_Sans,Oswald/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+  }
+  @font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    src: local("Open Sans"),
+         url("Open_Sans,Oswald/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+  }
+  @font-face {
+    font-family: "Oswald";
+    src: local("Oswald"),
+         url("Open_Sans,Oswald/Oswald/Oswald-VariableFont_wght.ttf");
+  }
