@@ -128,8 +128,8 @@ body {
 
 .h4 {
      font-family: "Oswald", sans-serif;
-     font-weight: 400;
-     font-size: 18px;
+     font-weight: 500;
+     font-size: 21px;
      max-width: 734px;
      line-height: 27px;
      text-align: center;
@@ -243,33 +243,33 @@ body {
      font-size: 48px;
      font-weight: bold;
      letter-spacing: 0.02em;
-     margin-bottom: 20px;
+     margin-bottom: 6px;
 }
 .request__h5{
      font-size: 24px;
      font-weight: bold;
      letter-spacing: 0.02em;
 }
-.request__flex-right{
 
-}
 .request__btn{
      background-color: #fff;
      color: #000;
      font-family: "Oswald", sans-serif;
      font-weight: 500;
      font-size: 14px;
+     letter-spacing: 0.05em;
      text-transform: uppercase;
      border: 0;
      display: flex;
      justify-content: center;
      align-items: center;
-     padding-right: 30px;
+     width: 175px;
+     height: 49px;
+     margin-top: 24px;
+     padding: 0;
 }
 .request__icon{
-     padding-top: 14px;
-     padding-bottom: 14px;
-     padding-left: 30px;
+     margin-top: 0;
      margin-right: 15px;
 }
 .request__btn:hover{
@@ -295,7 +295,6 @@ body {
      grid-template-columns: repeat(3,1fr);
      grid-template-rows: repeat(2,1fr);
      gap: 30px;
-     justify-content: center;
 }
 .services__grid-item {
      display: flex;
@@ -307,9 +306,136 @@ body {
 }
 .services__icon {
      margin: 0 auto;
+     margin-bottom: 24px;
+}
+.portfolio {
+}
+.portfolio__grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(25%, 25%));
+     grid-template-rows: repeat(auto-fill, minmax(2, 4));
+     justify-content: center;
+     gap: 0;
+}
+.portfolio__grid-item {
+
+}
+.portfolio__img {
+     height: 100%;
+     width: 100%;
+}
+.question {
+     padding-top: 150px;
+     padding-bottom: 110px;
+}
+.question .section__h2 {
+     margin-bottom: 50px;
+}
+.section_items {
+}
+.section_item {
+}
+.question__h3 {
+     text-transform: uppercase;
+     color: var(--accent-color);
      margin-bottom: 21px;
 }
+.question__h3.close::before {
+     content: "";
+     display: inline-block;
+     width: 15px;
+     height: 15px;
+     background-image: url(../index1/IMG/arrow.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 0;
+     margin-right: 15px;
+}
+.question__h3.close {
+     margin-bottom: 33px;
+}
+.question__p {
+     margin-bottom: 40px;
+     color: var(--gray-color);
+     max-width: 730px;
+}
+.question__h3.open::before {
+     content: "";
+     display: inline-block;
+     width: 15px;
+     height: 15px;
+     background-image: url(../index1/IMG/arrow.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 0;
+     margin-right: 15px;
+     transform: rotate(-90deg);
+}
+.question__h3.close + .question__p {
+     display: none;
+}
+.partners {
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-color: var(--dark-color);
+}
 
+.partners__h2 {
+     text-align: center;
+     color: var(--white-color);
+     margin-bottom: 60px;
+}
+.partners__flex {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+.partners__item {
+     margin-right: 30px;
+     margin-bottom: 20px;
+     margin-left: 0;
+}
+.partners__item:last-child{
+     margin-right: 0;
+}
+.partners__item:nth-child(5n){
+     margin-right: 0;
+}
+.reviews {
+     padding: 150px 0;
+}
+.reviews__h2 {
+     text-align: center;
+     margin-bottom: 60px;
+}
+.reviews__grid {
+     display: grid;
+     gap: 30px;
+     grid-template-columns: repeat(3, 1fr);
+}
+.reviews__grid-item {
+}
+.reviews__card {
+     background-color: #f7f7f7;
+     padding: 30px;
+}
+.reviews__card>.p-reviews {
+     max-width: 290px;
+}
+.reviews__quotes {
+     font-size: 96px;
+     color: var(--accent-color);
+     line-height: 1;
+     margin: 0;
+     margin-bottom: -40px;
+}
+.reviews_author-accent {
+     color: var(--accent-color);
+}
+.reviews__grid-item>.h4 {
+     text-transform: capitalize;
+     color: #000;
+}
 
 @media screen and (max-width:1280px) {
      .about__grid{
@@ -330,6 +456,24 @@ body {
      }
      .services__grid-item {
           width: 100%;
+     }
+     .portfolio__grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(50%, 50%));
+          grid-template-rows: repeat(4, 1fr);
+          justify-content: center;
+          gap: 0;
+     }
+     .question {
+          padding: 150px 15px 110px;
+     }
+     .partners__flex {
+          justify-content: center;
+     }
+     .partners__item {
+          margin-right: 15px;
+          margin-bottom: 20px;
+          margin-left: 15px;
      }
 }
 @media screen and (max-width:768px) {
