@@ -1,0 +1,49 @@
+@font-face {
+    /* в идеале нужно перечислить через запятую все форматы шрифтов .ttf .woff2 .woff .svg */
+    font-family: "Roboto"; /* название шрифта, которое мы задаем сами */
+    src: local("Roboto"), /* локальный шрифт загружается у пользователя если есть (по названию) */
+    url(./fonts/Roboto-VariableFont_wdth,wght.ttf) format("truetype"); /* шрифт загружается у нас если нет у пользователя */
+    font-weight: 100 900; /* переменный диапазон жирности */
+    font-stretch: 75% 100%; /* переменная ширина (75% - минимально возможная в принципе) */
+    font-style: normal; /* нормальный стиль */
+    /* как использовать этот шрифт
+    font-family: "Roboto", sans-serif;
+    */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"),
+  url(./fonts/Roboto-Italic-VariableFont_wdth,wght.ttf) format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: italic;
+}
+/* задаем переменные для цветов */
+:root {
+    --accent-color: #34547A;
+    --text-color-dark: #000;
+    --text-color-light: #727272;
+    --text-color-input: #5F5D5D;
+    --background-color-silver: #EEEFF1;
+    --background-color-white: #F9F9F9;
+}
+
+html {
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+     box-sizing: inherit;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.profile {
+    background-color: var(--accent-color);
+}
