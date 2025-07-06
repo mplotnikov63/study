@@ -37,13 +37,75 @@ body {
 }
 
 *, *::before, *::after {
-     box-sizing: inherit;
+    box-sizing: inherit;
 }
+
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
 }
-.profile {
+.header, .about-job, .order {
+    background-color: var(--background-color-silver);
+}
+.profile, .gallery {
+    background-color: var(--background-color-white);
+}
+.achievements-list, .footer, .button {
     background-color: var(--accent-color);
+}
+
+.header {
+    padding-top: 42px;
+}
+.hat {
+    display: flex;
+    justify-content: space-between;
+}
+.hat__wd-logo {
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 22px;
+}
+.hat__contents-list {
+    padding: 0;
+    margin-right: 9px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.hat__list-element {
+    max-height: 19px;
+    margin-right: 43px; 
+}
+.hat__list-element:last-child {
+    margin-right: 0; 
+}
+.hat__element-link {
+    letter-spacing: calc(16px/10);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 164.1%;
+    text-decoration-line: none;
+    color: #000;
+    text-decoration-line: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.introduction {
+}
+.introduction__img {
+}
+.introduction__acquaintance {
+}
+.introduction__title {
+}
+.introduction__text {
+}
+.regular-text {
+}
+.introduction__button {
+}
+.button {
 }

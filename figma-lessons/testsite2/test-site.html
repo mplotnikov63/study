@@ -7,148 +7,185 @@
     <link rel="stylesheet" href="test-site.css">
 </head>
 <body>
-    <header class="header">
+    <!-- верхняя часть сайта, навигация, лого и краткое описание -->
+    <header class="header"> <!-- header -уникальный блок, container - универсальный, для задания размеров и полжния на странице основных блоков -->
         <div class="container">
-            <div class="header__title">
-                <img src="./images/WD-logo.svg" alt="header__logo" class="header__logo">
-                <ul class="header__titlelist">
-                    <li class="header__title--item"><a href="#" class="header__title--link">главнвя</a></li>
-                    <li class="header__title--item"><a href="#" class="header__title--link">об авторе</a></li>
-                    <li class="header__title--item"><a href="#" class="header__title--link">работы</a></li>
-                    <li class="header__title--item"><a href="#" class="header__title--link">процесс</a></li>
-                    <li class="header__title--item"><a href="#" class="header__title--link">контакты</a></li>
+            <div class="hat"> <!-- новый блок, а не элемент блока header, поскольку hat может использоваться отдельно от header -->
+                <img src="./images/WD-logo.svg" alt="wd-logo" class="hat__wd-logo wd-logo"> <!-- является как обособленным блоком, так и элементом, на случай, если нужно внести уникальные корректировки для блока hat -->
+                <ul class="hat__contents-list">
+                    <li class="hat__list-element"><a href="#" class="hat__element-link">главная</a></li> <!-- однаковые элементы, можно добавть каждму уникальное обозначение при необходимости, hat__list-element-1, к примеру -->
+                    <li class="hat__list-element"><a href="#" class="hat__element-link">об авторе</a></li>
+                    <li class="hat__list-element"><a href="#" class="hat__element-link">работы</a></li>
+                    <li class="hat__list-element"><a href="#" class="hat__element-link">процесс</a></li>
+                    <li class="hat__list-element"><a href="#" class="hat__element-link">контакты</a></li>
                 </ul>
             </div>
-            <div class="header__capital">
-                <img src="./images/laptop.svg" alt="laptop" class="header__capital--img">
-                <div class="header__capital_contact">
-                    <h1 class="header__capital_contact--name">дизайн и верстка</h1>
-                    <p class="header__capital_contact--text regular_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <button class="header__capital_contact--button">написать мне</button>
+            <div class="introduction"> <!-- аналогично блок, поскольку может использоваться отдельно, может захочется перенести этот участок ниже -->
+                <img src="./images/laptop.svg" alt="laptop" class="introduction__img"> <!-- эта картинка используется только в introduction, поэтому является элементом, а не блоком -->
+                <div class="introduction__acquaintance"> <!-- аналогично и с этими неотъемлимыми элементами -->
+                    <h1 class="introduction__title">дизайн и верстка</h1>
+                    <p class="introduction__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    <button class="introduction__button button">написать мне</button>
                 </div>
             </div>
         </div>
     </header>
+    <!-- резюме -->
     <section class="profile">
-        <div class="container">
-            <h2 class="profile__title">обо мне</h2>
-            <p class="profile__text regular_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            <div class="profile__achievements">
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+        <div class="about-me">
+            <div class="container">
+                <h2 class="profile__title">обо мне</h2> <!-- заголовок -->
+                <!-- текст -->
+                <p class="profile__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <!-- перечень достижений -->
+            </div>
+        </div>
+            <div class="achievements-list"> <!-- блок - этот список может использоваться отдельно, в отличии от текста выше -->
+                <div class="container">
+                    <!-- элемент списка достижений -->
+                <div class="achievements-list__item"> 
+                    <!-- картинка элемнта списка достижений -->
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <!-- элемент с текстом -->
+                    <div class="achievements-list__item-text">
+                        <!-- текс-заголовок с акцентом -->
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <!-- дополнительный текст -->
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
                 </div>
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+                <div class="achievements-list__item"> 
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <div class="achievements-list__item-text">
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
                 </div>
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+                <div class="achievements-list__item"> 
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <div class="achievements-list__item-text">
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
                 </div>
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+                <div class="achievements-list__item"> 
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <div class="achievements-list__item-text">
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
                 </div>
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+                <div class="achievements-list__item"> 
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <div class="achievements-list__item-text">
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
                 </div>
-                <div class="profile__achievements--item">
-                    <img src="./images/project_icon.svg" alt="project" class="profile__achievements--img">
-                    <div class="profile__achievements--text">
-                        <h3 class="profile__achievements--number">40+</h3>
-                        <p class="profile__achievements--type regular_text">проектов</p>
+                <div class="achievements-list__item"> 
+                    <img src="./images/project_icon.svg" alt="project" class="achievements-list__item-img">
+                    <div class="achievements-list__item-text">
+                        <h3 class="achievements-list__item-accent-text">40+</h3>
+                        <p class="achievements-list__item-normal-text regular-text">проектов</p>
                     </div>
+                </div>
                 </div>
             </div>
-            <div class="profile__skills">
-                <div class="profile__skills_container">
-                    <div class="profile__skills--list">
-                        <h2 class="profile__skills--list_name">мои навыки</h2>
-                        <div class="profile__skills--list_item">
-                            <p class="profile__skills--item_name">Adobe photoshop</p>
-                            <div class="profile__skills--line"></div>
+            <!-- блок с уровнем навыков -->
+            <div class="personal-development">
+                <div class="personal-development-container">
+                    <!-- блок - список с уровнями навыков, внутри уже элементы -->
+                    <div class="development-list">
+                        <!-- название списка -->
+                        <h2 class="development-list__title">мои навыки</h2>
+                        <!-- элемент списка -->
+                        <div class="development-list__element">
+                            <!-- название элемента списка -->
+                            <p class="development-list__element-name">Adobe photoshop</p>
+                            <!-- линия прогресса -->
+                            <div class="development-list__progress-line"></div>
                         </div>
-                        <div class="profile__skills--list_item">
-                            <p class="profile__skills--item_name">Adobe photoshop</p>
-                            <div class="profile__skills--line"></div>
+                        <div class="development-list__element">
+                            <p class="development-list__element-name">Adobe photoshop</p>
+                            <div class="development-list__progress-line"></div>
                         </div>
-                        <div class="profile__skills--list_item">
-                            <p class="profile__skills--item_name">Adobe photoshop</p>
-                            <div class="profile__skills--line"></div>
+                        <div class="development-list__element">
+                            <p class="development-list__element-name">Adobe photoshop</p>
+                            <div class="development-list__progress-line"></div>
                         </div>
                     </div>
-                <img src="images/guy_photo.png" alt="my_photo" class="profile__skills--photo">
+                    <!-- фото того, чей прогресс описан в списке -->
+                <img src="images/guy_photo.png" alt="profile-photo" class="profile-photo">
                 </div>
             </div>   
-        </div>
     </section>
-    <section class="about_job">
+    <!-- блок с презентацией работы -->
+    <section class="about-job">
         <div class="container">
-            <h2 class="about_job__title">как я работаю</h2>
-            <p class="about_job__text regular_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            <img src="images/player_code.png" alt="player" class="about_job__player">
+            <!-- заголовок -->
+            <h2 class="about-job__title">как я работаю</h2>
+            <!-- текст -->
+            <p class="about-job__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <!-- изображение работы -->
+            <img src="images/player_code.png" alt="player" class="about-job__player">
         </div>
     </section>
+    <!-- галерея фотографий с возможностью приближенного просмотра -->
     <section class="gallery">
-        <div class="gallery__photos">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery__photos--img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery__photos--img">
+        <!-- блок - галлерея с элементами - фото -->
+        <div class="gallery-photos">
+            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
         </div>
-        <div class="container">
-            <div class="gallery__logos">
-                <img src="images/Microsoft_logo.png" alt="logo" class="gallery__logos--img">
-                <img src="images/Microsoft_logo.png" alt="logo" class="gallery__logos--img">
-                <img src="images/Microsoft_logo.png" alt="logo" class="gallery__logos--img">
-                <img src="images/Microsoft_logo.png" alt="logo" class="gallery__logos--img">
+        <!-- блок с перечнем логотипов -->
+            <div class="logos-list container">
+                <!-- отдельные логотивы - элементы блока -->
+                <img src="images/Microsoft_logo.png" alt="logo" class="logos-list__element">
+                <img src="images/Microsoft_logo.png" alt="logo" class="logos-list__element">
+                <img src="images/Microsoft_logo.png" alt="logo" class="logos-list__element">
+                <img src="images/Microsoft_logo.png" alt="logo" class="logos-list__element">
             </div>
-        </div>
     </section>
+    <!-- блок с обращением к сайту -->
     <section class="order">
         <div class="container">
+            <!-- элемент-заголовок блока -->
             <h2 class="order__title">хотите веб-сайт?</h2>
-            <p class="order__text regular_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            <div class="order__fields">
-                <div class="order__fields--name order__fields--small">Ваше имя</div>
-                <div class="order__fields--name order__fields--small">Ваш e-mail</div>
-                <div class="order__fields--name order__fields--large">сообщение</div>
+            <!-- элемент-текст, описвающий блок -->
+            <p class="order__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <!-- блок - поля с обратной связью -->
+            <div class="feedback">
+                <!-- поля для внесения текста, где у элементов feedback__field есть модфикаторы feedback__field_size со значениями (small, large) -->
+                <div class="feedback__field feedback__field_size_small">Ваше имя</div>
+                <div class="feedback__field feedback__field_size_small">Ваш e-mail</div>
+                <div class="feedback__field feedback__field_size_large">сообщение</div>
             </div>
-            <button class="order__button">отправить</button>
+            <button class="order__button button">отправить</button>
         </div>
     </section>
+    <!-- подвал сайта -->
     <footer class="footer">
+        <div class="container">
+            <!-- элементы текстовые -->
         <div class="footer__text">
-            <h3 class="footer__text--name">Иванов Иван</h3>
-            <p class="footer__text--annotation">(c) 2018. Все права защищены</p>
+            <h3 class="footer__text-name">Иванов Иван</h3>
+            <p class="footer__text-annotation">(c) 2018. Все права защищены</p>
         </div>
+        <!-- перечень логотипов -->
         <div class="footer__logos">
-            <img src="images/vk-logo.svg" alt="vklogo" class="footer__logos--img">
-            <img src="images/vk-logo.svg" alt="vklogo" class="footer__logos--img">
-            <img src="images/vk-logo.svg" alt="vklogo" class="footer__logos--img">
+            <!-- элемент списка -->
+            <img src="images/vk-logo.svg" alt="vklogo" class="footer__element">
+            <img src="images/vk-logo.svg" alt="vklogo" class="footer__element">
+            <img src="images/vk-logo.svg" alt="vklogo" class="footer__element">
+        </div>
         </div>
     </footer>
 </body>
