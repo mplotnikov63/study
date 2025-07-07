@@ -39,7 +39,9 @@ body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
+h1, h2, h3, h4, h5, h5, p{
+     margin: 0;
+ }
 
 .container {
     max-width: 1110px;
@@ -66,6 +68,7 @@ body {
     margin-top: 22px;
     margin-left: 2px;
     margin-bottom: 22px;
+    margin-right: 43px;
 }
 .hat__contents-list {
     padding: 0;
@@ -77,7 +80,8 @@ body {
 }
 .hat__list-element {
     max-height: 19px;
-    margin-right: 43px; 
+    margin-right: 43px;
+    white-space: nowrap; 
 }
 .hat__list-element:last-child {
     margin-right: 0; 
@@ -88,24 +92,141 @@ body {
     text-transform: uppercase;
     line-height: 164.1%;
     text-decoration-line: none;
-    color: #000;
+    color: var(--text-color-dark);
     text-decoration-line: none;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
 .introduction {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 112px;
+    padding-bottom: 146px;
 }
 .introduction__img {
+    margin-left: 82px;
+    margin-bottom: 8px;
 }
 .introduction__acquaintance {
+    max-width: 540px;
+    margin-left: 82px;
 }
 .introduction__title {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color-dark);
+    font-size: 48px;
+    line-height: 45px;
+    margin: 0;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+/* Делает заглавной только первую букву */
+.introduction__title::first-letter {
+    text-transform: capitalize;
+}
+
+.regular-text {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color-light);
+    font-size: 16px;
+    line-height: 161.1%;
+    margin: 0;
 }
 .introduction__text {
+    margin-top: 51px;
 }
-.regular-text {
+.text_wrap_no {
+    white-space: nowrap;
 }
+
 .introduction__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 65px;
+    padding: 0;
+    margin: 0;
+    margin-top: 53px;
+    border-width: 0;
+}
+.introduction__button-text {
+    margin-top: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    letter-spacing: calc(16px/10);
+    font-weight: 400;
 }
 .button {
+}
+/* профиль персонажа */
+.profile {
+}
+.about-me {
+    padding-top: 120px;
+    padding-bottom: 92px;
+}
+
+.title_medium {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+.title_medium::first-letter {
+    text-transform: uppercase;
+}
+.profile__title {
+    text-align: center;
+}
+.profile__text {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+.achievements-list {
+    padding: 98px calc((100vw - 1110px)/2) 96px calc((100vw - 1110px)/2 - 20px);
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 9px;
+}
+.achievements-list__item {
+    margin: 0 20px;
+    display: flex;
+}
+.achievements-list__item-img {
+}
+.achievements-list__item-text {
+    margin-left: 20px;
+}
+.achievements-list__item-accent-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+.achievements-list__item-normal-text {
+    color: #FFFFFF;
+    margin-top: 2px;
+}
+.personal-development {
+}
+.personal-development-container {
+}
+.development-list {
+}
+.development-list__title {
+}
+.development-list__element {
+}
+.development-list__element-name {
+}
+.development-list__progress-line {
+}
+.profile-photo {
 }
