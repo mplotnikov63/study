@@ -296,3 +296,21 @@ h1, h2, h3, h4, h5, h5, p{
     transform: translate(-50%, -50%) scale(1.1);
     cursor: pointer;
 }
+
+.gallery {
+    padding-top: 28px;
+}
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 25%));
+    justify-content: center;
+    gap: 0;
+}
+.gallery-photos__img {
+    height: 100%;
+    width: 100%;
+}
+.logos-list {
+}
+.logos-list__element {
+}
