@@ -134,14 +134,30 @@
     <section class="gallery">
         <!-- блок - галлерея с элементами - фото -->
         <div class="gallery-photos">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
-            <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            <div class="gallery-photos__element">
+                <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/writing_2photo.png" alt="photo" class="gallery-photos__img">
+            </div>
+            <div class="gallery-photos__element">
+                <img src="images/pages_1photo.png" alt="photo" class="gallery-photos__img">
+            </div>
         </div>
         <!-- блок с перечнем логотипов -->
             <div class="logos-list container">
@@ -158,20 +174,22 @@
             <!-- элемент-заголовок блока -->
             <h2 class="order__title title_medium">хотите веб-сайт?</h2>
             <!-- элемент-текст, описвающий блок -->
-            <p class="order__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <p class="order__text regular-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text_wrap_no">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
             <!-- блок - поля с обратной связью -->
+            <!-- поля для внесения текста, где у элементов feedback__field есть модфикаторы feedback__field_size со значениями (small, large) -->
             <div class="feedback">
-                <!-- поля для внесения текста, где у элементов feedback__field есть модфикаторы feedback__field_size со значениями (small, large) -->
-                <div class="feedback__field feedback__field_size_small">Ваше имя</div>
-                <div class="feedback__field feedback__field_size_small">Ваш e-mail</div>
-                <div class="feedback__field feedback__field_size_large">сообщение</div>
+                <div class="feedback__fields-row">
+                    <input type="text" class="feedback__field feedback__field_size_small" placeholder="Ваше имя">
+                    <input type="email" class="feedback__field feedback__field_size_small" placeholder="Ваш e-mail">
+                </div>
+                <textarea class="feedback__field feedback__field_size_large" placeholder="Сообщение"></textarea>
             </div>
             <button class="order__button button">отправить</button>
         </div>
     </section>
     <!-- подвал сайта -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <!-- элементы текстовые -->
         <div class="footer__text">
             <h3 class="footer__text-name">Иванов Иван</h3>
