@@ -1,0 +1,164 @@
+
+/* добавляем параметры ниже первым шагом */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+/* вторым шагом задаем размеры контейнра всего сайта */
+.container{
+  max-width: 1440px;
+  padding: 0 156px;
+  margin: 0 auto;
+  width: 100%;  
+}
+/* SemiBold это 600 */
+
+/* .montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* задаем переменные */
+:root {
+    --white-color: #ffffff;
+    --gray-color: #9CA3AF;
+    --black-color: #000000;
+    --accent-color: #4694DC;
+}
+/* классы шрифтов */
+.regular-text{
+    color: var(--gray-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.medium-title{
+    color: var(--black-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    letter-spacing: 3.3px;
+    font-weight: 600;
+}
+/* задаем параметры первого блока header */
+.header {
+    background-color: var(--accent-color);
+    /* минимальная высота задается согласно размеру блока в макете */
+    min-height: 500px;
+    /* padding не повлияет на мин. размер - стоит border-box */
+    padding-top: 82px;
+    padding-bottom: 50px;
+}
+.header__container {
+}
+/* подогнать текст по XY в режиме разработчика
+верхний и нижний padding задать в родительском блоке */
+/* НИКОГДА не регулировать отступы раздела
+в дочерних элементах, например - тексте */
+.header__title {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    margin: 38px 0 35px 0;
+    color: var(--white-color);
+    text-align: left;
+    white-space: nowrap;
+}
+.header__text {
+    color: var(--white-color);
+    line-height: 24px;
+    max-width: 437px;
+    text-align: left;
+    margin-bottom: 46px;
+}
+.header__button {
+    width: 194px;
+    height: 60px;
+    border: none;
+    color: var(--black-color);
+    line-height: 24px;
+    text-align: center;
+    padding: 7px 6px 3px 5px;
+}
+/* block */
+.block {
+    margin-left: 4px;
+    text-align: center;
+}
+.block__title {
+    margin-right: 8px;
+}
+.block__text {
+    margin: 1em auto;
+    margin-top: 25px;
+    letter-spacing: 0.04em;
+    max-width: 465px;
+}
+/* services */
+.services {
+    padding: 88px 0;
+}
+.services__container {
+}
+.services__items {
+    display: flex;
+    gap: 34px;
+    max-width: 880px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 118px;
+}
+.services__item {
+    /* max-width + width: 100% занимает максимум,
+    но если не влезает - уменьшается */
+    max-width: 270px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services__item-img {
+    /* использовать если растянуло не пропорциаонально из-за flex  */
+    align-self: center;
+}
+.services__item-title {
+    text-align: center;
+}
+/* team */
+.team {
+}
+.team__container {
+}
+
+/* media для адаптивности */
+@media screen and (max-width: 1440px) {
+    .container{
+        padding: 0 10.8vw;
+    }
+}
+/* # Medium Devices, Desktops */
+@media screen and (max-width: 1024px) {
+    .header__title {
+        font-size: 5.47vw;
+    }
+    .services__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* # Extra Small Devices, Phones */
+@media screen and (max-width: 480px) {
+    .header__title {
+        white-space: wrap;
+        font-size: 32px;
+        max-width: 30vw;
+    }
+}
