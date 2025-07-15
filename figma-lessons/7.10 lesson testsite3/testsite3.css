@@ -55,8 +55,6 @@ body {
     padding-top: 82px;
     padding-bottom: 50px;
 }
-.header__container {
-}
 /* подогнать текст по XY в режиме разработчика
 верхний и нижний padding задать в родительском блоке */
 /* НИКОГДА не регулировать отступы раздела
@@ -89,11 +87,7 @@ body {
 }
 /* block */
 .block {
-    margin-left: 4px;
     text-align: center;
-}
-.block__title {
-    margin-right: 8px;
 }
 .block__text {
     margin: 1em auto;
@@ -103,9 +97,7 @@ body {
 }
 /* services */
 .services {
-    padding: 88px 0;
-}
-.services__container {
+    padding: 88px 0 166px;
 }
 .services__items {
     display: flex;
@@ -134,8 +126,46 @@ body {
 }
 /* team */
 .team {
+    padding-bottom: 100px;
 }
-.team__container {
+.team__items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.team__item {
+    display: flex;
+    width: 260px;
+    padding: 20px;
+    height: 76px;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 11px;
+    box-shadow: 0px 4px 70px 0px rgba(91, 93, 99, 0.06);
+}
+
+.team__img {
+    align-self: center;
+    margin-right: 8px;
+    /* margin-left: 20px; */
+}
+.team__title {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+}
+.team__text {
+    font-size: 11px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    margin-top: 8px;
 }
 
 /* media для адаптивности */
