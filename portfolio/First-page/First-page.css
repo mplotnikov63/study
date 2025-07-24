@@ -1,0 +1,31 @@
+:root {
+    /* colors */
+    --white-color: #ffffff;
+    --dark-text-color: #48555B;
+    --accent-color: #00A4E5;
+    --accent-word-color: #16ace8;
+    --grey-border-color: #E6E6E6;
+    --white-input-bgc-color: #979797;
+    --dark-1-footer-bgc-color: #171819;
+    --dark-2-footer-bgc-color: #141a20;
+    --grey-filter-bgc-color: #D8D8D8;
+    /* fonts  */
+    --first-font-family: "Open Sans", sans-serif;
+    --second-font-family: "Bebas Neue", sans-serif;
+}
+/* Желательно подключить normalize.css для сброса стилей по умолчанию в разных браузерах */
+html {
+     box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 250px;
+    margin: 0 auto;
+}
